@@ -1,6 +1,6 @@
-package app.chatt.chattapp.init.dagger
+package app.chatt.chattapp.dagger
 
-import app.chatt.chattapp.init.ChattApplication
+import app.chatt.chattapp.application.ChattApplication
 import dagger.Component
 import javax.inject.Singleton
 

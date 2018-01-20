@@ -1,11 +1,11 @@
-package app.chatt.chattapp.init
+package app.chatt.chattapp.application
 
 import android.app.Application
-import app.chatt.chattapp.init.dagger.AppComponent
-import app.chatt.chattapp.init.dagger.AppModule
-import app.chatt.chattapp.init.dagger.DaggerAppComponent
+import app.chatt.chattapp.dagger.AppComponent
+import app.chatt.chattapp.dagger.AppModule
+import app.chatt.chattapp.dagger.DaggerAppComponent
 
-class ChattApplication: Application() {
+class ChattApplication : Application() {
 
     lateinit var appComponent: AppComponent
 
