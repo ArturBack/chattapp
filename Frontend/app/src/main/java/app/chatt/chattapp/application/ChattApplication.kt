@@ -1,9 +1,9 @@
 package app.chatt.chattapp.application
 
 import android.app.Application
-import app.chatt.chattapp.dagger.AppComponent
-import app.chatt.chattapp.dagger.AppModule
-import app.chatt.chattapp.dagger.DaggerAppComponent
+import app.chatt.chattapp.dagger.component.AppComponent
+import app.chatt.chattapp.dagger.component.DaggerAppComponent
+import app.chatt.chattapp.dagger.module.AppModule
 
 class ChattApplication : Application() {
 
@@ -12,11 +12,11 @@ class ChattApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         appComponent = initDagger(this);
-        appComponent.inject(this)
     }
 
     private fun initDagger(app: ChattApplication): AppComponent =
             DaggerAppComponent.builder()
                     .appModule(AppModule(app))
                     .build()
+
 }

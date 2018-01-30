@@ -1,4 +1,4 @@
-package app.chatt.chattapp.dagger
+package app.chatt.chattapp.dagger.module
 
 import android.app.Application
 import android.content.Context
